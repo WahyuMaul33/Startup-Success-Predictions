@@ -1,6 +1,6 @@
 # Startup Success Predictor: End-to-End AI Deployment
 
-This project is a high-performance, full-stack AI application designed to predict the survival and growth potential of startups. By utilizing a **Gradient Boosting Classifier (88.1% Accuracy)**, the system analyzes business metrics such as funding history, milestones, and geographical data to provide actionable success probabilities.
+This project is a full-stack AI application designed to predict the survival and growth potential of startups. By utilizing a **Gradient Boosting Classifier (88.1% Accuracy)**, the system analyzes business metrics such as funding history, milestones, and geographical data to provide actionable success probabilities.
 
 ---
 
