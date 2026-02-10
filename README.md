@@ -15,7 +15,7 @@ Users can input startup metrics via the sidebar or main dashboard. The UI is bui
 ### Real-Time Analysis
 Once the "Generate Survival Analysis" button is clicked, the system communicates with the FastAPI backend to calculate success probability.
 
-![Analysis Results](visualization/result.png)
+![Analysis Results](visualization/results.png)
 *Figure 2: Prediction results showing Status, Survival Probability, and Model Metadata.*
 
 ---
