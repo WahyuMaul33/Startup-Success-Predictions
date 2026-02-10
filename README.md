@@ -2,6 +2,33 @@
 
 This project is a high-performance, full-stack AI application designed to predict the survival and growth potential of startups. By utilizing a **Gradient Boosting Classifier (88.1% Accuracy)**, the system analyzes business metrics such as funding history, milestones, and geographical data to provide actionable success probabilities.
 
+---
+
+## Application Preview
+
+### Dashboard
+Users can input startup metrics via the sidebar or main dashboard. The UI is built to handle complex numerical inputs and provide instant feedback.
+
+![Main Dashboard](screenshots/dashboard_main.png)
+*Figure 1: Streamlit Frontend showing the input parameters.*
+
+### Real-Time Analysis
+Once the "Generate Survival Analysis" button is clicked, the system communicates with the FastAPI backend to calculate success probability.
+
+![Analysis Results](screenshots/results_view.png)
+*Figure 2: Prediction results showing Status, Survival Probability, and Model Metadata.*
+
+---
+
+## How the Prediction Engine Works
+
+The system follows a 4-step process to ensure high-accuracy predictions:
+
+1.  **Data Capture**: The Streamlit frontend collects 10 primary inputs from the user.
+2.  **Feature Alignment**: The `UMKMModelWrapper` expands these 10 inputs into the **36-feature signature** required by the model, filling categorical defaults (like industry and location) automatically.
+3.  **Inference**: The **Gradient Boosting** engine processes the aligned feature vector.
+4.  **Probability Scoring**: The model returns both a binary classification (Success/At Risk) and a raw probability score, providing more nuance than a simple "Yes/No."
+
 ## System Architecture
 The project is built with a decoupled architecture to simulate real-world production environments:
 * **Core Engine**: A custom Python wrapper that standardizes input data and handles inference via `joblib`.
