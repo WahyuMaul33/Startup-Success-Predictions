@@ -16,7 +16,7 @@ After benchmarking multiple architectures, the **Gradient Boosting Classifier** 
 | Model | Accuracy |
 | :--- | :--- |
 | **Gradient Boosting (Deployed)** | **87.50%** |
-| Bagging Classifier | 87.50% |
+| Bagging Classifier | 88.10% |
 | Neural Network | 84.52% |
 | AdaBoost | 83.93% |
 
