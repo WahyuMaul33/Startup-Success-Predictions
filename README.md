@@ -9,7 +9,7 @@ This project is a high-performance, full-stack AI application designed to predic
 ### Dashboard
 Users can input startup metrics via the sidebar or main dashboard. The UI is built to handle complex numerical inputs and provide instant feedback.
 
-![Main Dashboard](visualization/dashboard.png)
+![Main Dashboard](visualization/dashboard-main.png)
 *Figure 1: Streamlit Frontend showing the input parameters.*
 
 ### Real-Time Analysis
